@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Traditional Barber</title>
+    <link rel="icon" href="dist/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="dist/assets/css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header id="welcome">
+
+        <nav id="navigation">
+            <a href="#welcome" class="navLink" onclick="toggleNav()">Accueil</a>
+            <a href="#about" class="navLink" onclick="toggleNav()">Nos Valeurs</a>
+            <a href="#prices" class="navLink" onclick="toggleNav()">Nos Tarifs</a>
+            <a href="#contact" class="navLink" onclick="toggleNav()">Contact</a>
+            <a class="icon" id="icon" onclick="toggleNav()"><i class="fas fa-bars"></i></a>
+        </nav>
+
+        <h1>Votre Barbier Traditionnel</h1>
+        <h2>Rasoir, Peigne et Savoir-faire.</h2>
+
+        <a href="#about" id="arrow"><i class="fas fa-cut"></i></a>
+    </header>
+
+    <!-- SECTION ABOUT -->
+
+    <section id="about" class="about">
+        <div class="centerHeading">
+            <h2 class="aboutTitle">
+                Découvrez nos Valeurs.
+            </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-1-2">
+                <h3 class="aboutSubtitle">Coupez les cheveux comme il y a 100 ans.</h3>
+                <p class="aboutParagraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, adipisci sapiente. Dignissimos deserunt dolorem iste, est iusto velit hic voluptates.
+                </p>
+                <h3 class="aboutSubtitle">L'art de tailler une barbe.</h3>
+                <p class="aboutParagraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae doloribus nam fuga ratione magnam nesciunt? Omnis dicta recusandae nihil voluptatibus?
+                </p>
+            </div>
+            <div class="col-1-2">
+                <div class="composition">
+                    <img src="dist/assets/img/3imgs1.jpg" alt="photo barbier 1" class="compositionPhoto compositionPhoto-1">
+                    <img src="dist/assets/img/3imgs2.jpeg" alt="photo barbier 2" class="compositionPhoto compositionPhoto-2">
+                    <img src="dist/assets/img/3imgs3.jpg" alt="photo barbier 3" class="compositionPhoto compositionPhoto-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION TARIFS -->
+
+    <section id="prices">
+        <h2>Nos Tarifs</h2>
+
+        <div id="containerFlex">
+            <div class="flexCards">
+                <div class="head">
+                    <p>Coupe</p>
+                </div>
+                <div class="content">Huile</div>
+                <div class="content">Crème</div>
+                <div class="content">Shampoing</div>
+                <div class="content">Dégradé</div>
+                <div class="price">
+                    <p>10€</p>
+                </div>
+            </div>
+            <div class="flexCards">
+                <div class="head">
+                    <p>Barbe</p>
+                </div>
+                <div class="content">Huile</div>
+                <div class="content">Crème</div>
+                <div class="content">Shampoing</div>
+                <div class="content">Dégradé</div>
+                <div class="price">
+                    <p>25€</p>
+                </div>
+            </div>
+            <div class="flexCards">
+                <div class="head">
+                    <p>Coupe + Barbe</p>
+                </div>
+                <div class="content">Huile</div>
+                <div class="content">Crème</div>
+                <div class="content">Shampoing</div>
+                <div class="content">Dégradé</div>
+                <div class="price">
+                    <p>35€</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION TESTIMONIAL -->
+
+    <section id="testimonials">
+        <div class="containerTesti">
+            <div class="centerTesti">
+                <div class="carousel">
+                    <div class="changeHidden">
+                        <div class="contentTesti">
+                            <div class="element">"Exceptionnel."</div>
+                            <div class="element">"Un service impeccable !"</div>
+                            <div class="element">"Barbe parfaitement taillée."</div>
+                            <div class="element">"Des produits de qualité."</div>
+                            <div class="element">"Exceptionnel."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MEMBERS -->
+    <section id="team">
+
+        <h3>Il est temps de rencontrer l'équipe</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ab.</p>
+
+        <div class="containerFlexTeam">
+            <div class="team">
+                <div class="member pic1"></div>
+                <div class="subText">
+                    <h4>John Doe</h4>
+                    <p>Spécialiste de la barbe.</p>
+                </div>
+            </div>
+            <div class="team">
+                <div class="member pic2"></div>
+                <div class="subText">
+                    <h4>Terry Smith</h4>
+                    <p>Roi du dégradé</p>
+                </div>
+            </div>
+            <div class="team">
+                <div class="member pic3"></div>
+                <div class="subText">
+                    <h4>Tracy Morgan</h4>
+                    <p>Mains de fée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MEMBERS -->
+
+    <section id="contact">
+        <h2>Téléphone</h2>
+        <h3>0232 986 78954</h3>
+
+        <div class="containerFlexMedias">
+            <div class="medias">
+                <a href="http://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="medias">
+                <a href="http://www.twitter.com/" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="medias">
+                <a href="http://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/8eeb3b5771.js"></script>
+    <script src="dist/assets/js/vendor.js"></script>
+    <script src="dist/assets/js/scripts.js"></script>
+</body>
+</html>

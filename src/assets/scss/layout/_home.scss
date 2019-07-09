@@ -1,0 +1,410 @@
+/*---------- SECTION ABOUT ----------*/
+
+.about {
+    background: $offWhite;
+    padding-bottom: 10rem;
+}
+
+.centerHeading {
+    text-align: center !important;
+    margin-bottom: 8rem !important;
+}
+
+.aboutTitle {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $dark, #C0B283);
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    margin: 3rem 0;
+    padding-top: 5rem;
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.aboutSubtitle {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.aboutParagraph {
+    font-size: 1.9rem;
+}
+
+.aboutParagraph:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row [class^="col-"] {
+    float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+    margin-right: 6rem ;
+}
+
+.row .col-1-2 {
+    width: calc((100% - 6rem) / 2);
+}
+
+.composition {
+    position: relative;
+}
+
+.compositionPhoto {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: .2rem;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+}
+
+.compositionPhoto-1 {
+    left: 0;
+    top: -2rem;
+}
+.compositionPhoto-2 {
+    right: 0;
+    top: 2rem;
+}
+.compositionPhoto-1 {
+    left: 20%;
+    top: 10rem;
+}
+
+.compositionPhoto:hover {
+    outline: 1.5rem solid #c0B283;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0.2 5rem 4rem  rgba(0, 0, 0, 0.5);
+    z-index: 30;
+}
+
+.composition:hover .compositionPhoto:not(:hover) {
+    transform: scale(0.5);
+}
+
+/*---------- SECTION TARIFS ----------*/
+
+#prices {
+    border-top: 1px dashed $goldMetal;
+
+    h2 {
+        padding-top: 5rem;
+        text-align: center;
+        font-size: 5.5rem;
+        background: $offWhite;
+        background-image: linear-gradient(to right, #000, rgb(255,239,185));
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+#containerFlex {
+    background: $offWhite;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+.flexCards {
+    width: 30rem;
+    height: 45rem;
+    margin: 2rem;
+    transition: all 0.2s ease-in;
+    border: 1px dashed $dark;
+}
+
+.flexCards:nth-child(1) {
+    border: 1px dashed $dark;
+}
+.flexCards:nth-child(2) {
+    border: none;
+}
+.flexCards:nth-child(3) {
+    border: 1px dashed $dark;
+}
+
+.head {
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    color: $dark;
+    background: $egg;
+
+    p {
+        margin: 0;
+        font-size: 3rem;
+        line-height: 10rem;
+        font-family: 'Abril Fatface';
+    }
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    background: $egg;
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.price {
+    margin: 0;
+    height: 11rem;
+    background: $egg;
+    
+    p {
+        margin: 0 auto;
+        font-size: 5rem;
+        text-align: center;
+        line-height: 11rem;
+        font-family: 'Abril Fatface';
+    }
+}
+
+.flexCards:nth-child(2) .head {
+    background: $dark;
+    color: $gold;
+}
+.flexCards:nth-child(2) .content {
+    background: $dark;
+    color: $gold;
+}
+.flexCards:nth-child(2) .price {
+    background: $dark;
+    color: $gold;
+}
+
+.flexCards:hover {
+    transform: scale(1.05);
+}
+
+/*---------- SECTION TESTIMONIALS ----------*/
+
+#testimonials {
+    height: 60rem;
+    width: 100%;
+    border-top: 1px dashed $gold;
+    background: url('../img/sectionBg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.containerTesti {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110rem;
+    height: 40rem;
+    transform: translate(-50%, -50%);
+    border-radius: .2rem;
+    background: rgba(55,55,55,0.3);
+    color: #fff;
+}
+
+.centerTesti {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -2.25rem;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+
+    .changeHidden {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        height: 13rem;
+        line-height: 13rem;
+        width: 100rem;
+        overflow: hidden;
+
+        .contentTesti {
+            position: relative;
+            animation: carousel 8s ease-in-out infinite;
+        }
+
+        .element {
+            font-weight: 700;
+            font-size: 8rem;
+        }
+    }
+}
+
+@keyframes carousel {
+    0%, 20% {
+        transform: translateY(0);
+    }
+    25%, 45% {
+        transform: translateY(-13rem);
+    }
+    50%, 70% {
+        transform: translateY(-26rem);
+    }
+    75%, 95% {
+        transform: translateY(-39rem);
+    }
+    100% {
+        transform: translateY(-52rem);
+    }
+}
+
+/*---------- SECTION TEAM ----------*/
+
+#team {
+    height: 80rem;
+    width: 100%;
+    background: $offWhite;
+    border-top: 1px dashed $goldMetal;
+    padding-bottom: 10rem;
+
+    h3 {
+        text-align: center;
+        font-size: 5.5rem;
+        background-image: linear-gradient(to right, #000, rgb(255,239,185));
+        background-clip: text;
+        color: transparent;
+        margin-top: 5.5rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.containerFlexTeam {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team {
+    height: 50rem;
+    width: 40rem;
+    background: $offWhite;
+    margin: 5rem;
+    overflow: hidden;
+}
+
+.subText {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background: rgb(211,203,178);
+
+    h4 {
+        font-size: 2rem;
+        margin: 0;
+        padding-top: 2rem;
+    }
+}
+
+.member {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.pic1 {
+    background: url('../img/barber1.jpg');
+    background-position: 35% 15%;
+}
+.pic1:hover {
+    transform: scale(1.2);
+}
+.pic2 {
+    background: url('../img/barber2.jpg');
+    background-position: 50% 40%;
+}
+.pic2:hover {
+    transform: scale(1.2);
+}
+.pic3 {
+    background: url('../img/barber3.jpg');
+    background-position: CENTER;
+}
+.pic3:hover {
+    transform: scale(1.2);
+}
+
+/*---------- SECTION CONTACT ----------*/
+
+#contact {
+    height: 20rem;
+    width: 100%;
+    padding-bottom: 5rem;
+    border-top: 1px dashed $goldMetal;
+
+    h2 {
+        margin: 8rem 0;
+        font-size: 10rem;
+        text-align: center;
+    }
+
+    h3 {
+        margin: 5rem 0;
+        font-size: 5.5rem;
+        text-align: center;
+        background-image: linear-gradient(to right, #000, rgb(255,239,185));
+        background-clip: text;
+        color: transparent;
+    }
+
+    .containerFlexMedias {
+        display: flex;
+        justify-content: center;
+    }
+
+    .medias {
+        font-size: 10rem;
+        margin: 2rem;
+        padding-bottom: 5rem;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+
+
